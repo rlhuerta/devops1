@@ -14,6 +14,8 @@ timeout(time: 3, unit: 'MINUTES') {
             } 
         } 
     } 
+}
+}
 node { 
     git url: 'https://github.com/rlhuerta/devops1.git' 
  
@@ -65,5 +67,3 @@ def buildInfo1 = server.download spec: downloadSpec
 
 // Publish the build to Artifactory 
     server.publishBuildInfo buildInfo1 
-} 
-} 
